@@ -3,7 +3,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-
 <html lang="en">
 
 <jsp:include page="fragments/staticFiles.jsp"/>
@@ -17,7 +16,8 @@
 
     Server host name is: <b><%=request.getServerName() %></b>
 
-    <jsp:include page="fragments/footer.jsp"/>
+    InetAddress Localhost : <b><%=java.net.InetAddress.getLocalHost() %></b>
+   <jsp:include page="fragments/footer.jsp"/>
 </div>
 </body>
 
