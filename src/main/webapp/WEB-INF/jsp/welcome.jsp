@@ -13,10 +13,10 @@
     <h2><fmt:message key="welcome"/></h2>
     <spring:url value="/resources/images/pets.png" htmlEscape="true" var="petsImage"/>
     <img src="${petsImage}"/>
+    <%@ page import="java.util.List" %>
 
-    Server host name is: <b><%=request.getServerName() %></b>
+    Server host : <b><%=java.net.InetAddress.getLocalHost() %></b>
 
-    InetAddress Localhost : <b><%=java.net.InetAddress.getLocalHost() %></b>
    <jsp:include page="fragments/footer.jsp"/>
 </div>
 </body>
